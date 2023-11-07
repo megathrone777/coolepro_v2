@@ -1,7 +1,9 @@
 import React from "react";
 
+import { StyledWrapper } from "./ExampleComponent.styled";
+
 const ExampleComponent: React.FC = () => {
-  return <div>ExampleComponent</div>;
+  return <StyledWrapper>ExampleComponent</StyledWrapper>;
 };
 
 export { ExampleComponent };
