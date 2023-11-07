@@ -1,0 +1,21 @@
+{
+  "extends": "next/core-web-vitals",
+  "ignorePatterns": ["*.js", "*.mjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "newline-after-var": "error",
+    "newline-before-return": "error",
+    "no-inline-comments": "error",
+    "no-trailing-spaces": "error",
+    "prefer-const": "error",
+    "semi": "error"
+  }
+}
