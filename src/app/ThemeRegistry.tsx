@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useServerInsertedHTML } from "next/navigation";
 import { ServerStyleSheet, StyleSheetManager, ThemeProvider } from "styled-components";
 
-import { theme } from "~/theme";
+import { GlobalStyle, theme } from "~/theme";
 
 const ThemeRegistry: React.FC<{ children: React.ReactElement[] }> = ({ children }) => {
   const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet());
@@ -26,7 +26,10 @@ const ThemeRegistry: React.FC<{ children: React.ReactElement[] }> = ({ children 
       sheet={styledComponentsStyleSheet.instance}
       shouldForwardProp={(): boolean => true}
     >
-      <ThemeProvider {...{ theme }}>{children}</ThemeProvider>
+      <ThemeProvider {...{ theme }}>
+        <GlobalStyle />
+        {children}
+      </ThemeProvider>
     </StyleSheetManager>
   );
 };

@@ -27,10 +27,6 @@ const reset = css({
     display: "block",
   },
 
-  a: {
-    textDecoration: "none",
-  },
-
   "ol, ul": {
     listStyle: "none",
   },

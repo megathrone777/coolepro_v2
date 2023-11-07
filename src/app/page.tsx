@@ -7,8 +7,6 @@ const HomePage: React.FC = async () => {
     <div>
       Home Page
       <ExampleComponent />
-      <ExampleComponent />
-      <ExampleComponent />
     </div>
   );
 };

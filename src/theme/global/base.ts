@@ -39,6 +39,14 @@ const base = css(({ theme: { fonts } }) => ({
     display: "none",
   },
 
+  a: {
+    textDecoration: "underline",
+
+    "&:hover": {
+      textDecoration: "none",
+    },
+  },
+
   b: {
     fontWeight: fonts.bold,
   },
